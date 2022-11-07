@@ -29,3 +29,256 @@ body{
 
 
 /*헤더*/
+
+
+
+
+/* contact */
+#contact{
+  width: 100%;   
+  height: auto;
+  padding: 100px 0;
+  position: relative;
+}
+
+#contact::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url(../img/contact_bg.png) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#contact .ct-wrap{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+#contact .ct-wrap h3{
+  padding-bottom: 3%;
+}
+
+#contact .ct-wrap form{
+  width: 75%;
+  /* height: 660px; */
+  margin: 0 auto;
+  background: rgba(51, 231, 255, 0.2);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  box-shadow: 0 0 30px #000;
+  -webkit-box-shadow: 0 0 30px rgba(31, 184, 195, 0.3);
+}
+
+#contact .ct-wrap .gform{
+  position: relative;
+}
+
+#contact .ct-wrap .gform::before{
+  content: '';
+  border: 6px solid #33E7FF;
+  border-width: 6px 0 0 6px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+#contact .ct-wrap .gform::after{
+  content: '';
+  border: 6px solid #33E7FF;
+  border-width:  0 6px 6px 0;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+}
+
+#contact .ct-wrap form input, #contact .ct-wrap form textarea{
+  width: 90%;
+  margin: 0 auto 3%;
+  background: rgba(51, 231, 255, 0.2);
+  border: 0px;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #33E7FF;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+textarea{
+  height: 300px;
+}
+
+#contact .ct-wrap form .send{
+  background: rgba(51, 231, 255, 0.65);
+  width: 20%;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 2% 0 0;
+  display: block;
+}
+
+#contact .ct-wrap form .send:hover{
+  background: rgba(86, 139, 135, 0.65);
+}
+/* //contact */
+
+
+/* Footer */
+footer{
+  background: #042732;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+}
+
+footer .f_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+footer .f_wrap .f_logo{
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+footer .f_wrap .f_logo img{
+  max-width: 120px;
+}
+
+footer .f_wrap .f_contents{
+  width: 100%;
+  display: flex;
+  align-items:baseline;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 6%;
+}
+
+footer .f_wrap .f_contents::after{
+  content: '';
+  border-top: 1px solid #33E7FF;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer .f_wrap .f_contents .ct_1st{
+  text-align: left;
+  width: 25%;
+}
+
+footer .f_wrap .f_contents .ct_1st h4{
+  color: #FFB300;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+footer .f_wrap .f_contents .ct_1st .info li{
+  color: #33E7FF;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 3;
+}
+
+footer .f_wrap .f_contents .ct_2nd{
+  text-align: center;
+  width: 50%;
+}
+
+footer .f_wrap .f_contents .ct_2nd h4{
+  color: #FFB300;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 6%;
+}
+
+footer .f_wrap .f_contents .ct_2nd .sns{
+  display: flex;
+  justify-content: center;
+}
+
+footer .f_wrap .f_contents .ct_2nd .sns li{
+  border: 1px solid #33E7FF;
+  width: 35px;
+  height: 35px;
+  margin-right: 3%;
+  border-radius: 5px;
+  /* padding: 1%; */
+}
+
+footer .f_wrap .f_contents .ct_2nd .sns li:last-child{
+  margin-right: 0;
+}
+
+footer .f_wrap .f_contents .ct_2nd .sns li i{
+  color: #33E7FF;
+}
+
+footer .f_wrap .f_contents .ct_2nd .sns li i:hover{
+  box-shadow: 0 0 10px 0 #b0e9e0 inset, 0 0 10px 5px #b0e9e0;
+}
+
+footer .f_wrap .f_contents .ct_3rd{
+  text-align: right;
+  width: 25%;
+}
+
+footer .f_wrap .f_contents .ct_3rd h4{
+  color: #FFB300;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10%;
+}
+
+footer .f_wrap .f_contents .ct_3rd .pp{
+  display: flex;
+  justify-content:flex-end;
+}
+
+footer .f_wrap .f_contents .ct_3rd .pp button{
+  border: 1px solid #33E7FF;
+  width: 40%;
+  margin-right: 8%;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+footer .f_wrap .f_contents .ct_3rd .pp button:last-child{
+  margin-right: 0;
+}
+
+footer .f_wrap .f_contents .ct_3rd .pp button a{
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #33E7FF;
+}
+
+footer .f_wrap .f_contents .ct_3rd .pp button:hover{
+  box-shadow: 0 0 10px 0 #b0e9e0 inset, 0 0 10px 5px #b0e9e0;
+}
+
+footer .f_wrap .f_notice{
+  text-align: center;
+  font-size: 8px;
+  color: gray;
+  padding-top: 3%;
+}

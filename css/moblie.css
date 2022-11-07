@@ -20,7 +20,22 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  #contact{
+    padding: 50px 0;
+  }
 
+  #contact .ct-wrap form{
+    width: 90%;
+    backdrop-filter: blur(0px);
+  }
+
+  footer .f_wrap .f_logo img{
+    max-width: 100px;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd .pp button{
+    width: 45%;
+  }
 }
 
 
@@ -28,7 +43,47 @@
 
 
 @media screen and (max-width:576px) {
+  textarea{
+    height: 250px;
+  }
 
+  footer .f_wrap .f_contents{
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  footer .f_wrap .f_contents .ct_1st{
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .f_wrap .f_contents .ct_2nd{
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .f_wrap .f_contents .ct_2nd h4{
+    margin-bottom: 5%;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd{
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd h4{
+    margin-bottom: 5%;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd .pp button{
+    margin-right: 5%;
+  }
+
+  footer .f_wrap .f_notice{
+    padding-top: 5%;
+  }
 }
 
 
