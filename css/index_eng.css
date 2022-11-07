@@ -3,17 +3,24 @@
     address{font-style:normal;}
 
 
-
+    .int3_br{
+      display: none;
+    }
 
     
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+  .int3_br{
+    display: block;
+  }
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
 }
 
 
@@ -27,7 +34,9 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
-
+  .int3_br{
+    display: none;
+  }
 }
 
 
@@ -43,12 +52,14 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
-
+    .int3_left_box{
+      height: 140px;
+      
+    }
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
 }

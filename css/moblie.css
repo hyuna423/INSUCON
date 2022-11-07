@@ -1,18 +1,124 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+  /*intro2*/
+  
+  #intro2::before{
+    width: 700px;
+    height: 700px;
+  }
+
+  #intro2::after{
+    width: 980px;
+    height: 160px;
+    bottom: 5%;
+  }
+
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+      /*intro2*/
+
+    #intro2::before{
+      width: 650px;
+      height: 650px;
+      left: -12%;
+      top: -11%;
+    }
+  
+    #intro2::after{
+      width: 900px;
+      height: 145px;
+      right: -4%;
+    }
+
+    .intro2_cont_img img.itr_img{
+      max-width: 80%;
+    }
+
+    /*intro3*/
+
+
+    .int3_left_box::after{
+      width: 200px;
+      height: 50px;
+      left: -10%;
+      top: -20%;
+    }
+
+    .int3_left_box{
+      padding: 3% 3% 1%;
+    }
+
+    .int3_left_box br{
+      display: none;
+    }
+
+    .intro3_right{
+      text-align: right;
+    }
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+
+      /*intro2*/
+
+      #intro2{
+        padding: 100px 0 120px;
+      }
+
+      .intro2_wrap{
+        padding: 6% 2%;
+      }
+
+      #intro2::before{
+        width: 450px;
+        height: 450px;
+      }
+    
+      #intro2::after{
+        width: 750px;
+        height: 125px;
+        right: -6%;
+        bottom: 5.1%;
+        background-size: contain;
+      }
+
+      .int2_cont_box{
+        width: 48%;
+        padding: 3% 3% 1%;
+      }
+
+      .int2_cont_box br{
+        display: none;
+      }
+
+      .intro2_cont_img img.itr_img{
+        max-width: 90%;
+      }
+
+      /*intro3*/
+
+      .intro3_contents{
+        display: block;
+      }
+
+      .intro3_contents .intro3_left{
+        width: 80%;
+        margin: 15% auto 10%;
+      }
+
+      .intro3_right{
+        width: 100%;
+      }
 }
 
 
@@ -20,6 +126,52 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+
+  /*intro2*/
+
+  .intro2_contents{
+    display: block;
+    margin-top: 15%;
+    margin-bottom: 20%;
+  }
+
+
+  .int2_cont_box{
+    width: 90%;
+    margin: 0 auto 5%;
+    padding: 8% 5%;
+  }
+
+  #intro2::before{
+    width: 600px;
+    height: 600px;
+    left: -16%;
+    top: -9%;
+  }
+
+
+  #intro2::after{
+    width: 900px;
+    height: 140px;
+    right: -30%;
+    bottom: 3%;
+  }
+
+
+  .itr_img_m{
+    display: block;
+  }
+  
+  .itr_img{
+    display: none;
+  }
+
+
+  /*intro3*/
+
+  .intro3_contents .intro3_left{
+    width: 100%;
+  }
 
 }
 
@@ -29,6 +181,45 @@
 
 @media screen and (max-width:576px) {
 
+  /*intro2*/
+
+  .intro2_wrap{
+    width: 94%;
+  }
+
+  .int2_cont_box{
+    width: 90%;
+    margin: 0 auto 12%;
+    padding: 8% 5%;
+  }
+
+
+  #intro2::before{
+    width: 600px;
+    height: 600px;
+    left: -50%;
+    top: -14%;
+  }
+
+
+  #intro2::after{
+    width: 800px;
+    height: 140px;
+    right: -100%;
+    bottom: 2.5%;
+  }
+  
+
+  /*intro3*/
+
+  .int3_left_box{
+    height: 120px;
+  }
+
+  .int3_left_box::after{
+    top: -14%;
+  }
+
 }
 
 
@@ -36,12 +227,24 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
+    #intro2::before{
+      width: 550px;
+      height: 550px;
+    }
+  
+  
+    #intro2::after{
+      right: -110%;
+    }
 
+    .int2_cont_box{
+      padding: 8% 4% 4%;
+    }
+    
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
 }
