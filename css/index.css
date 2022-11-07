@@ -118,16 +118,6 @@ body{
 }
 
 
-.int2_cont_box1:hover::after{
-  top: -5%;
-  left: -3%;
-}
-
-.int2_cont_box1:hover::before{
-  right: -3%;
-  bottom: -5%;
-}
-
 
 .int2_cont_box2::after{
   content: "";
@@ -153,15 +143,6 @@ body{
   transition: all 0.2s;
 }
 
-.int2_cont_box2:hover::after{
-  left: -3%;
-  bottom: -5%;
-}
-
-.int2_cont_box2:hover::before{
-  right: -3%;
-  top: -5%;
-}
 
 .intro2_cont_img{
   width: 100%;
