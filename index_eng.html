@@ -40,23 +40,28 @@
 
   <header>
 
-    <div class="">
+    <div class="hd_all container">
 
       <hgroup>
 
-        <h1><img src="img/" alt="logo"></h1>
+        <h1>
+          <a href="./index_eng.html">
+            <img class="logo_p" src="img/insucon_logo.png" alt="logo">
+            <img class="logo_m" src="img/insucon_logow 1.png" alt="logo_m">
+          </a>
+        </h1>
 
       </hgroup>
 
 
-      <nav class="">
+      <nav class="pc_menu">
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#Home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="" class="scroll">InsuCon Coin</a></li>
+          <li><a href="" class="scroll">Roadmap</a></li>
+          <li><a href="" class="scroll">Contact</a></li>
 
         </ul>
       </nav>
@@ -64,40 +69,113 @@
 
       <!--반응형-->
 
-      <div class="">
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><span></span></label>
+      <label for="active" class="close"></label>
 
-        <img src="img/" alt="menu_button">
-
-      </div>
-
-      <nav class="">
+      <nav class="wrapper">
 
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#Home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="" class="scroll">InsuCon Coin</a></li>
+          <li><a href="" class="scroll">Roadmap</a></li>
+          <li><a href="" class="scroll">Contact</a></li>
 
         </ul>
 
       </nav>
 
       <!--반응형 js-->
-      <script type="text/javascript">
+      <!-- <script type="text/javascript">
         $(function () {
           $("").click(function () {
             $("").animate({ width: "toggle" }, 250);
           });
         });
 
-      </script>
+      </script> -->
 
     </div>
 
   </header>
 
+  <main>
+
+    <div class="button_gnb">
+      
+      <button class="lang">
+        <a href="index.html"><img src="img/wep_ko.png" alt="wep_ko"></a>
+      </button>
+      <button class="arrow_top">
+        <i class="xi-arrow-top xi-2x"></i>
+      </button>
+      
+    </div>
+
+    <div class="bottom_gnb">
+      <button class="home_btn"><a href="#Home"><i class="xi-home"></i></a></button>
+      <button class="wallet"><a href=""> <i class="xi-wallet"></i></a></button>
+      <button class="whte_pp"><a href="InsuCon whitepaper eng.pdf"> <i class="xi-file-download"></i></a></button>
+      <button class="lan"><a href="index.html"><i class="xi-globus"></i></a></button>
+    </div>
+  
+
+    <section id="Home">
+
+      <div class="main_vid">
+        <video autoplay="" muted="" loop="" playsinline="">
+          <source src="vid/main_insucon.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="cover"></div>
+      <div class="home_wrap container">
+
+        <div class="home_txt">
+          <h2>InsuCon</h2>
+          <b>
+            Through the safety and profitability secured through the blockchain,<br>
+            Take global insurance business and management to a new level.
+          </b>
+          <p>
+            By introducing blockchain efficiency, transparency, and cost rationality to non-face-to-face transactions that have become a trend through COVID-19, we aim to become a global insurance platform that provides the best corporate/personal coverage for travel and international commerce at the most reasonable price.
+          </p>
+        </div>
+        <div class="links">
+          <button>
+            <a href="InsuCon whitepaper eng.pdf"><i class="xi-paper"></i> WhitePaper</a>
+          </button>
+          <button>
+            <a href=""><i class="xi-wallet"></i> Wallet</a>
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="intro">
+
+      <div class="intro_wrap container">
+        <div class="int_left" data-aos="fade-up" data-aos-duration="3000">
+          <div class="int_txt">
+            <b>
+              This is what Insucon is aiming for.
+            </b>
+            <p>
+              For unrestricted sales and expansion of global personal/corporate commercial insurance, we provide a transparent and secure global insurance operation/marketing platform that systematically and consistently scales according to national standards, laws, commercial practices and products.
+            </p>
+          </div>
+        </div>
+        <div class="int_right" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <img src="img/intro_img.png" alt="intro_img">
+        </div>
+      </div>
+
+    </section>
+
+  </main>
 
   <script>
     AOS.init();

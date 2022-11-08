@@ -1,18 +1,64 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  #home .main_vid {
+    /* left: 50%;
+    transform: translateX(-50%); */
+    height: 100%;
+    width: auto;
+  }
+  #intro .intro_wrap .int_left .int_txt {
+    padding: 7%;
+
+  }
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    #Home .home_wrap {
+      flex-direction: column;
+      height: 50%;
+    }
+    #Home .home_wrap .home_txt {
+      width: 100%;
+    }
+    #Home .home_wrap .links {
+      width: 90%;
+      justify-content: center;
+    }
+    #intro {
+      background: radial-gradient(78.5% 71.1% at 52.42% 71.1%, #1C929A 0%, #0D141A 31.42%);
+    }
+    #intro::after {
+      left: 5%;
+      bottom: -10%;
+    }
+    #intro .intro_wrap {
+      flex-direction: column;
+    }
+    #intro .intro_wrap .int_left {
+      width: 58%;
+      margin-bottom: 10%;
+    }
+    #intro .intro_wrap .int_right {
+      width: 70%;
+      justify-content: center;
+    }
+
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    .hd_all .pc_menu {
+      width: 65%;
+    }
+    #intro .intro_wrap .int_left {
+      width: 78%;
+    }
 }
 
 
@@ -20,6 +66,45 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  header {
+    background: rgba(255, 255, 255, 0);
+  }
+  .hd_all {
+    display: block;
+  }
+  .hd_all h1 a .logo_p {
+    display: none;
+  }
+  .hd_all h1 a .logo_m {
+    display: block;
+    height: 90px;
+    width: auto;
+    margin-top: 10px;
+    position: absolute;
+    right: 5%;
+    top: 0;
+  }
+  .hd_all .pc_menu {
+    display: none;
+  }
+  .hd_all .menu-btn {
+    display: block;
+  }
+  #Home .home_wrap {
+    height: 60%;
+  }
+  #intro::after {
+    bottom: -20%;
+  }
+  #intro .intro_wrap .int_left {
+    width: 100%;
+  }
+  #intro .intro_wrap .int_left .int_txt {
+    padding: 5%;
+  }
+  #intro .intro_wrap .int_right {
+    width: 90%;
+  }
 
 }
 
@@ -28,7 +113,27 @@
 
 
 @media screen and (max-width:576px) {
-
+  .button_gnb {
+    display: none;
+  }
+  .bottom_gnb {
+    display: flex;
+  }
+  #Home .home_wrap .home_txt h2 {
+    font-size: 5rem;
+  }
+  #Home .home_wrap .home_txt br {
+    display: none;
+  }
+  #Home .home_wrap .links {
+    display: none;
+  }
+  #intro .intro_wrap .int_left {
+    width: 90%;
+  }
+  #intro .intro_wrap .int_left .int_txt p br {
+    display: none;
+  }
 }
 
 
@@ -43,5 +148,10 @@
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
+      .wrapper {
+        width: 85%;
+    }
+    .wrapper ul li::before {
+      bottom: -25%;
+  }
 }
