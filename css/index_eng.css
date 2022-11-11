@@ -3,6 +3,9 @@
     address{font-style:normal;}
 
 
+
+
+
     .int3_br{
       display: none;
     }
@@ -10,6 +13,12 @@
     
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+ 
+  #intro .intro_wrap .int_left .int_txt {
+    padding: 7%;
+
+  }
 
   .int3_br{
     display: block;
@@ -21,12 +30,38 @@
 /*노트북*/
   @media screen and (max-width:1024px) {
 
+
+
+    #intro {
+      background: radial-gradient(78.5% 71.1% at 52.42% 71.1%, #1C929A 0%, #0D141A 31.42%);
+    }
+    #intro::after {
+      left: 5%;
+      bottom: -10%;
+    }
+    #intro .intro_wrap {
+      flex-direction: column;
+    }
+    #intro .intro_wrap .int_left {
+      width: 58%;
+      margin-bottom: 10%;
+    }
+    #intro .intro_wrap .int_right {
+      width: 70%;
+      justify-content: center;
+    }
+
+
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+
+      #intro .intro_wrap .int_left {
+        width: 78%;
+      }
 }
 
 
@@ -35,12 +70,27 @@
 
 @media screen and (max-width:767px) {
 
+  #intro::after {
+    bottom: -20%;
+  }
+  #intro .intro_wrap .int_left {
+    width: 100%;
+  }
+  #intro .intro_wrap .int_left .int_txt {
+    padding: 5%;
+  }
+  #intro .intro_wrap .int_right {
+    width: 90%;
+  }
 
 
   .int3_br{
     display: none;
   }
 
+  .home_txt br{
+    display: none;
+  }
 }
 
 
@@ -49,6 +99,13 @@
 
 @media screen and (max-width:576px) {
 
+
+  #intro .intro_wrap .int_left {
+    width: 90%;
+  }
+  #intro .intro_wrap .int_left .int_txt p br {
+    display: none;
+  }
 }
 
 
@@ -57,8 +114,11 @@
 
   @media screen and (max-width:425px) {
     .int3_left_box{
-      height: 140px;
-      
+      height: 160px;
+    }
+
+    .int3_left_box::after{
+      top: -10%;
     }
 
 
@@ -68,4 +128,6 @@
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
+
 }
+

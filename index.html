@@ -37,6 +37,154 @@
 
 <body>
 
+  <header>
+
+    <div class="hd_all container">
+
+      <hgroup>
+
+        <h1>
+          <a href="./index.html">
+            <img class="logo_p" src="img/insucon_logo.png" alt="logo">
+<!--             <img class="logo_m" src="img/insucon_logow 1.png" alt="logo_m"> -->
+          </a>
+        </h1>
+
+      </hgroup>
+
+
+      <nav class="pc_menu">
+        <ul>
+
+          <li><a href="#Home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="#coin" class="scroll">InsuCon Coin</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+
+        </ul>
+      </nav>
+
+
+      <!--반응형-->
+
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><span></span></label>
+      <label for="active" class="close"></label>
+
+      <nav class="wrapper">
+
+        <ul>
+
+          <li><a href="#Home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="#coin" class="scroll">InsuCon Coin</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <!--반응형 js-->
+      <!-- <script type="text/javascript">
+        $(function () {
+          $("").click(function () {
+            $("").animate({ width: "toggle" }, 250);
+          });
+        });
+
+      </script> -->
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="button_gnb">
+      
+      <button class="lang">
+        <a href="index_eng.html" class="lang_aa"><img src="img/wep_eng.png" alt="wep_eng"></a>
+      </button>
+      <a href="index.html" class="arrow_top">
+        <i class="xi-arrow-top xi-2x"></i>
+      </a>
+      
+    </div>
+
+    <div class="bottom_gnb">
+      <button class="home_btn"><a href="#Home"><i class="xi-home"></i></a></button>
+      <button class="wallet"><a href=""> <i class="xi-wallet"></i></a></button>
+      <button class="whte_pp"><a href="InsuCon whitepaper ko.pdf"> <i class="xi-file-download"></i></a></button>
+      <button class="lan"><a href="index_eng.html"><i class="xi-globus"></i></a></button>
+    </div>
+  
+
+    <section id="Home">
+
+      <div class="main_vid">
+        <video autoplay="" muted="" loop="" playsinline="">
+          <source src="vid/main_insucon.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="cover"></div>
+      <div class="home_wrap container">
+
+        <div class="home_txt">
+          <h2>InsuCon</h2>
+          <b>
+            블록체인을 통해 확보된 안전성,수익성을 통해<br>
+            글로벌 보험사업 및 관리를 새로운 차원으로 끌어올립니다.
+          </b>
+          <p>
+            코로나를 통해 완전히 트렌드로 자리잡은 비대면 거래방식에<br>
+            블록체인의 효율성/투명성/비용합리성을 도입하여<br>
+            국가, 인종, 지역에 관계 없이 여행과 국제 상거래에 필요한<br> 
+            글로벌 안전 보험 상품을 가장 합리적인 가격에 가입하고, <br>
+            가장 좋은 기업/개인 보장을 제공하는 글로벌 <br>
+            보험 (Insurance)플랫폼을 지향합니다.
+          </p>
+        </div>
+        <div class="links">
+          <button>
+            <a href="InsuCon whitepaper ko.pdf"><i class="xi-paper"></i> WhitePaper</a>
+          </button>
+          <button>
+            <a href=""><i class="xi-wallet"></i> Wallet</a>
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="intro">
+
+      <div class="intro_wrap container">
+        <div class="int_left" data-aos="fade-up" data-aos-duration="3000">
+          <div class="int_txt">
+            <b>
+              인슈콘이 지향하는 목표는 이러합니다.
+            </b>
+            <p>
+              글로벌 개인/기업 상용 보험의 지역에 제한 없는 영업과 <br>
+              확장을 위해서는각국의 기준, 법률, 상관습과 상품에 따라<br>
+              이를 체계화 및 통일성있게보험상품을 마련하고, <br>
+              지역과 시간에 무관하게 확장 될 수 있는 투명하고도 <br>
+              안전한 글로벌 보험 운영/마케팅 플랫폼을 제공하는 것 입니다.
+            </p>
+          </div>
+        </div>
+        <div class="int_right" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <img src="img/intro_img.png" alt="intro_img">
+        </div>
+      </div>
+
+    </section>
+
+
+
 
   <section id="intro2">
 
@@ -44,7 +192,7 @@
   data-aos-duration="2000">
     <h3 div data-aos="flip-left">Why Blockchain was applied?</h3>
 
-    <h4 div data-aos="flip-left">블록체인을 통해 확보된 비대면 보험 솔루션, 개인 및 기업 상용보험의 글로벌화를 이룹니다!</h4>
+    <h4 div data-aos="flip-left">블록체인을 통해 확보된 비대면 보험 솔루션, <br class="int2_br"><br class="int2_br"> 개인 및 기업 상용보험의 글로벌화를 이룹니다!</h4>
 
 
     <div class="intro2_contents" data-aos="fade-up"
@@ -90,7 +238,7 @@
       <h3 data-aos="fade-up"
       data-aos-duration="1500">인슈콘 (insucon) 생태계를 이끄는 구성요소</h3>
       <h4 data-aos="fade-up"
-      data-aos-duration="1500">개인, 기업, 보험사정인, 국제 결제 거래업체 등 모두가 만족할 생태계를 제공 할 것 입니다.</h4>
+      data-aos-duration="1500">개인, 기업, 보험사정인, 국제 결제 거래업체 등<br class="int2_br"><br class="int2_br"> 모두가 만족할 생태계를 제공 할 것 입니다.</h4>
 
       <div class="intro3_contents container">
         <div class="intro3_left" data-aos="fade-right"
@@ -120,6 +268,150 @@
       </div><!-- intro3_contents -->
     </div><!-- intro3_wrap -->
   </section><!-- intro3 -->
+
+
+
+  <section id="coin"><!-- coin 시작 -->
+    <div class="coin_area container">
+      <div class="coin_txt" 
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+        <h3>인슈콘<span>(insucon)</span> Coin 자금배분계획</h3>
+        <div class="chart_txt">
+          <p>Coin name : insucon</p>
+          <div class='v-line'></div>
+          <p>Symbol : ISCN</p>
+          <div class='v-line'></div>
+          <p>Protocol : ERC20</p>
+          <div class='v-line'></div>
+          <p>Total supply : 300,000,000</p>
+        </div>
+      </div>
+
+      <div class="chart_area"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+        <div class="chart_graph"><!--  <img src="img/coin_graph.png" alt="coin_graph"> --></div>
+        <div class="chart_data">
+          <ul>
+            <li><span></span>Coin Sale 20%</li>
+            <li><span></span>International insurnace legal advice 15%</li>
+            <li><span></span>License acquisition for payment service 10%</li>
+            <li><span></span>production of platform prototype 15%</li>
+            <li><span></span>Global conglomerates marketing 25%</li>
+            <li><span></span>Team 15%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- coin 끝 -->
+
+  <section id="roadmap"><!-- roadmap 시작 -->
+    <div class="roadmap_wrap container">
+      <h3 data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="800">인슈콘(insucon) Roadmap</h3>
+
+      <div class="roadmap_box">
+        <div class="rdm_box"
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="500">
+          <div class="rdm_card">
+            <h4>2021</h4>
+            <p><b>Q2</b>InsuCon [인슈콘] 설립</p>
+            <p><b>Q4</b>국제보험거래 DataBase 조사</p>
+          </div>
+        </div>
+        <div class="rdm_box"
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="600">
+          <div class="rdm_card">
+            <h4>2022</h4>
+            <p><b>Q1</b>플랫폼 기본설계</p>
+            <p><b>Q2</b>국제보험 신용평가 도입</p>
+            <p><b>Q3</b>플랫폼 확장 가능 지갑 출시 <br>및 글로벌 상장</p>
+            <p><b>Q4</b>미주 국제 자동차 보험 시장 진출</p>
+          </div>
+        </div>
+        <div class="rdm_box"
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="900">
+          <div class="rdm_card">
+            <h4>2023</h4>
+            <p><b>Q1</b>보험사정 프로세스 도입 준비</p>
+            <p><b>Q2</b>플랫폼 고도화 작업 시작</p>
+            <p><b>Q3</b>글로벌 보험금 처리 업체 계약 확정</p>
+            <p><b>Q4</b>유럽 지역 거래소로 상장 확대</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- roadmap 끝 -->
+
+
+
+   <!-- contact -->
+   <section id="contact">
+    <div class="ct-wrap container">
+      <h3 data-aos="fade-down" data-aos-duration="2500">Contact</h3>
+      <form action="" class="gform" data-email method>
+        <input type="email" name="email" value placeholder="E-MAIL" class="email aos-init" required data-aos="fade-up" data-aos-duration="3000">
+        <textarea name="message" id="message" placeholder="MESSAGE" class="aos-init" data-aos="fade-up" data-aos-duration="3000"></textarea>
+        <input type="submit" value="SEND" class="send aos-init" data-aos="fade-up" data-aos-duration="3000">
+      </form>
+    </div>
+  </section>
+  <!-- //contact -->
+
+</main>
+
+  <footer>
+    <div class="f_wrap container">
+      <h4 class="f_logo">
+        <a href="index.html"><img src="./img/insucon_logo_300x.png" alt="Footer logo"></a>
+      </h4>
+      <div class="f_contents">
+        <div class="ct_1st">
+          <h4>Information</h4>
+          <ul class="info">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <!-- //ct_1st -->
+
+        <div class="ct_2nd">
+          <h4>Community</h4>
+          <ul class="sns">
+            <li><a href=""><i class="xi-telegram xi-2x"></i></a></li>
+            <li><a href=""><i class="xi-kakaotalk xi-2x"></i></a></li>
+          </ul>
+        </div>
+        <!-- //ct_2nd -->
+
+        <div class="ct_3rd">
+          <h4>Whitepaper</h4>
+          <div class="pp">
+            <button><a href="./InsuCon whitepaper ko.pdf">Ko.ver</a></button>
+            <button><a href="./InsuCon whitepaper eng.pdf">Eng.ver</a></button>
+          </div>
+        </div>
+        <!-- //ct_3rd -->
+
+      </div>
+      <!-- //f_contents -->
+      <p class="f_notice">재단의 업무 범위는 코인생성, 블록체인관리, 지갑관리, 거래소등의 상장에만 한하며 코인의 판매에 관여하지 않습니다.</p>
+    </div>
+    <!-- //f_wrap container -->
+  </footer>
+<!-- //footer -->
+
 
 </body>
 

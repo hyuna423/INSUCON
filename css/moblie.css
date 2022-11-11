@@ -2,6 +2,18 @@
 /*데탑*/
 @media screen and (max-width:1440px) {
 
+  /*home*/
+  #home .main_vid {
+    /* left: 50%;
+    transform: translateX(-50%); */
+    height: 100%;
+    width: auto;
+  }
+  #intro .intro_wrap .int_left .int_txt {
+    padding: 7%;
+
+  }
+
   /*intro2*/
   
   #intro2::before{
@@ -15,12 +27,58 @@
     bottom: 5%;
   }
 
+
+  /*coin*/
+  #coin .coin_area .chart_area::before {
+    width: 80%;
+  }
+
+
 }
-
-
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+    /*home*/
+    #Home .home_wrap {
+      flex-direction: column;
+      height: 50%;
+    }
+    #Home .home_wrap .home_txt {
+      width: 100%;
+    }
+    #Home .home_wrap .links {
+      width: 100%;
+      flex-direction: column;
+    }
+    #Home .home_wrap .links button{
+      margin-left: 0;
+      margin-bottom: 5%;
+    }
+
+    #Home .home_wrap .links button:last-child{
+      margin-bottom: 0 !important;
+    }
+
+    /*intro*/
+    #intro {
+      background: radial-gradient(78.5% 71.1% at 52.42% 71.1%, #1C929A 0%, #0D141A 31.42%);
+    }
+    #intro::after {
+      left: 5%;
+      bottom: -10%;
+    }
+    #intro .intro_wrap {
+      flex-direction: column;
+    }
+    #intro .intro_wrap .int_left {
+      width: 58%;
+      margin-bottom: 10%;
+    }
+    #intro .intro_wrap .int_right {
+      width: 70%;
+      justify-content: center;
+    }
 
       /*intro2*/
 
@@ -37,6 +95,10 @@
       right: -4%;
     }
 
+    .intro2_cont_img{
+      margin-top: 12%;
+    }
+
     .intro2_cont_img img.itr_img{
       max-width: 80%;
     }
@@ -48,11 +110,11 @@
       width: 200px;
       height: 50px;
       left: -10%;
-      top: -20%;
+      top: -14%;
     }
 
     .int3_left_box{
-      padding: 3% 3% 1%;
+      padding: 4% 5% 2%;
     }
 
     .int3_left_box br{
@@ -62,6 +124,35 @@
     .intro3_right{
       text-align: right;
     }
+
+    /*coin*/
+    #coin .coin_area .chart_area {
+      justify-content: space-around;
+      width: 100%;
+    }
+    #coin .coin_area .chart_area::before {
+      width: 100%;
+      border-radius: 450px 0px 0px 450px;
+  } 
+
+
+  .chart_graph::after{
+    width: 350px;
+    height: 350px;
+    left: 0;
+    top: 14%;
+  }
+  
+
+  #coin .coin_area .chart_data {
+    color: #fff;
+    width: 45%;
+    margin: 0 auto ;
+}
+
+#roadmap .roadmap_wrap{
+  width: 100%;
+}
 }
 
 
@@ -69,7 +160,28 @@
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
 
+    h3{
+      font-size: 2.2em;
+    }
+
+    /*home*/
+
+    .hd_all .pc_menu {
+      width: 65%;
+    }
+
+    #Home .home_wrap .links{
+      margin-top: 5%;
+    }
+
+
+
+
       /*intro2*/
+      #intro .intro_wrap .int_left {
+        width: 78%;
+      }
+
 
       #intro2{
         padding: 100px 0 120px;
@@ -88,18 +200,22 @@
         width: 750px;
         height: 125px;
         right: -6%;
-        bottom: 5.1%;
+        bottom: 4%;
         background-size: contain;
       }
 
-      .int2_cont_box{
-        width: 48%;
-        padding: 3% 3% 1%;
+      .intro2_contents{
+        display: block;
       }
 
-      .int2_cont_box br{
-        display: none;
+      .int2_cont_box{
+        width: 80%;
+        margin: 0 auto 7%;
+        padding: 7%;
+        line-height: 1.8rem;
       }
+
+
 
       .intro2_cont_img img.itr_img{
         max-width: 90%;
@@ -119,6 +235,72 @@
       .intro3_right{
         width: 100%;
       }
+
+
+      /*coin*/
+
+      #coin .coin_area .chart_area{
+        flex-direction: column;
+
+      }
+
+      #coin .coin_area .chart_area::before{
+        border-radius: 400px 400px 0px 0px;
+        background: linear-gradient(180deg, rgba(35,221,234,1) 0%, rgba(35,221,234,0) 100%)border-box;
+      }
+
+      .chart_graph::after{
+        width: 500px;
+        height: 500px;
+        left: -30%;
+        top: 10%;
+      }
+
+
+      #coin .coin_area .chart_data{
+        width: 60%;
+        margin-top: 20%;
+      }
+
+      #coin .coin_area .chart_txt {
+        flex-direction: column;
+    }
+    #coin .coin_area .coin_txt .chart_txt {
+      margin-bottom: 7%;
+  }
+
+    #coin .coin_area .coin_txt .chart_txt .v-line {
+      border-left: 3px solid #23DDEA;
+      height: 45px;
+      transform: rotate(90deg);
+      margin: 0 auto;
+  }
+
+
+  /*roadmap*/
+
+    #roadmap .roadmap_wrap .roadmap_box {
+      display: block;
+    }
+    #roadmap .roadmap_wrap .roadmap_box .rdm_box {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 8%;
+    }
+    #roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card h4 {
+      margin-bottom: 3%;
+    }
+
+    .rdm_card p br{
+      display: none;
+    }
+
+
+  /*contact*/
+
+  #contact .ct-wrap form{
+    width: 100%;
+  }
 }
 
 
@@ -126,6 +308,65 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+
+
+
+  /*home*/
+
+  .hd_all {
+    display: block;
+  }
+
+  .hd_all h1{
+    float: right;
+    width: 15%;
+    line-height: 100px;
+    margin-right: -60px;
+  }
+
+
+  header hgroup h1 img{
+    max-width: 100%;
+
+  }
+
+  .hd_all .pc_menu {
+    display: none;
+  }
+  .hd_all .menu-btn {
+    display: block;
+  }
+
+
+  #Home .home_wrap .links{
+    margin-top: 10%;
+  }
+
+  #Home .home_wrap .links button{
+    width: 53%; 
+  }
+
+
+  #Home .home_wrap .home_txt > p{
+    margin-top: 7%;
+  }
+
+
+
+  /*intro*/
+
+  #intro::after {
+    bottom: -20%;
+  }
+  #intro .intro_wrap .int_left {
+    width: 100%;
+  }
+  #intro .intro_wrap .int_left .int_txt {
+    padding: 5%;
+  }
+  #intro .intro_wrap .int_right {
+    width: 90%;
+  }
 
   /*intro2*/
 
@@ -157,6 +398,9 @@
     bottom: 3%;
   }
 
+  .intro2_contents p br{
+    display: none;
+  }
 
   .itr_img_m{
     display: block;
@@ -166,11 +410,74 @@
     display: none;
   }
 
+  .int2_br{
+    display: block;
+  }
+
 
   /*intro3*/
 
   .intro3_contents .intro3_left{
     width: 100%;
+  }
+
+
+  .int3_left_box{
+    padding: 5% 5% 2%;
+  }
+
+
+  /*coin*/
+
+  
+  .chart_graph::after{
+    width: 400px;
+    height: 400px;
+    left: -37%;
+    top: 8%;
+  }
+
+  #coin .coin_area .chart_data{
+    width: 80%;
+    margin-top: 5%;
+  }
+
+/*roadmap*/
+
+  #coin .coin_area .chart_area::before{
+    width: 100%;
+  }
+
+  #coin .coin_area .chart_graph{
+    padding: 0;
+  }
+
+  #coin .coin_area .chart_graph img{
+    width: 100%;
+  }
+
+
+  /*contact*/
+  #contact{
+    padding: 50px 0;
+  }
+
+  #contact .ct-wrap form{
+    backdrop-filter: blur(0px);
+  }
+
+  #contact .ct-wrap form .send{
+    width: 30%;
+  }
+
+
+  /*footer*/
+  footer .f_wrap .f_logo img{
+    max-width: 100px;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd .pp button{
+    width: 45%;
   }
 
 }
@@ -180,6 +487,41 @@
 
 
 @media screen and (max-width:576px) {
+
+  /*home*/
+  .button_gnb {
+    display: none;
+  }
+  .bottom_gnb {
+    display: flex;
+  }
+  #Home .home_wrap .home_txt h2 {
+    font-size: 5rem;
+  }
+  #Home .home_wrap .home_txt br {
+    display: none;
+  }
+  #Home .home_wrap .links {
+    display: none;
+  }
+
+
+  .hd_all h1{
+    float: right;
+    width: 15%;
+    line-height: 100px;
+    margin-right: 0px;
+  }
+
+
+  /*intro*/
+
+  #intro .intro_wrap .int_left {
+    width: 90%;
+  }
+  #intro .intro_wrap .int_left .int_txt p br {
+    display: none;
+  }
 
   /*intro2*/
 
@@ -220,6 +562,74 @@
     top: -14%;
   }
 
+
+  /*contact*/
+  textarea{
+    height: 250px;
+  }
+
+
+  /*coin*/
+  #coin .coin_area .chart_graph{
+    height: 396px;
+  }
+
+
+  .chart_graph::after{
+  width: 330px;
+  height: 330px;
+  left: -47%;
+  top: 5%;
+  }
+
+  #coin .coin_area .chart_data{
+  width: 100%;
+  margin-top: 5%;
+  font-size: 0.94em;
+  }
+
+  /*footer*/
+
+
+  
+  footer .f_wrap .f_contents{
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  footer .f_wrap .f_contents .ct_1st{
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .f_wrap .f_contents .ct_2nd{
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .f_wrap .f_contents .ct_2nd h4{
+    margin-bottom: 5%;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd{
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd h4{
+    margin-bottom: 5%;
+  }
+
+  footer .f_wrap .f_contents .ct_3rd .pp button{
+    margin-right: 5%;
+  }
+
+  footer .f_wrap .f_notice{
+    padding-top: 5%;
+  }
+
 }
 
 
@@ -240,11 +650,49 @@
     .int2_cont_box{
       padding: 8% 4% 4%;
     }
+
+
+    .int3_left_box{
+      height: 140px;
+    }
+
+    /*coin*/
+
+    .chart_graph::after{
+      left: -45%;
+      top: 3%;
+      }
     
+      #coin .coin_area .chart_data{
+      width: 100%;
+      margin-top: 5%;
+      font-size: 0.8em;
+      }
+    
+
+
+      /*contact*/
+      #contact .ct-wrap form .send{
+        width: 40%;
+      }
+
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
+      /*home*/
+      .wrapper {
+        width: 85%;
+    }
+    .wrapper ul li::before {
+      bottom: -25%;
+  }
+
+  
+  .chart_graph::after{
+    left: -56%;
+    top: 3%;
+    }
 }
