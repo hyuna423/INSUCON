@@ -1,4 +1,3 @@
-
 /*데탑*/
 @media screen and (max-width:1440px) {
 
@@ -9,296 +8,337 @@
     height: 100%;
     width: auto;
   }
+
   #intro .intro_wrap .int_left .int_txt {
     padding: 7%;
 
   }
 
   /*intro2*/
-  
-  #intro2::before{
+
+  #intro2::before {
     width: 700px;
     height: 700px;
   }
 
-  #intro2::after{
+  #intro2::after {
     width: 980px;
     height: 160px;
     bottom: 5%;
   }
 
-
-  /*coin*/
-  #coin .coin_area .chart_area::before {
-    width: 80%;
+  .int3_left_box h5 {
+    left: 8%;
   }
+
+  #coin .coin_area .chart_data {
+    width: 50%;
+  }
+
+
 
 
 }
 
 /*노트북*/
-  @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
-    /*home*/
-    #Home .home_wrap {
-      flex-direction: column;
-      height: 50%;
-    }
-    #Home .home_wrap .home_txt {
-      width: 100%;
-    }
-    #Home .home_wrap .links {
-      width: 100%;
-      flex-direction: column;
-    }
-    #Home .home_wrap .links button{
-      margin-left: 0;
-      margin-bottom: 5%;
-    }
+  /*home*/
+  #Home .home_wrap {
+    flex-direction: column;
+    height: 50%;
+  }
 
-    #Home .home_wrap .links button:last-child{
-      margin-bottom: 0 !important;
-    }
+  #Home .home_wrap .home_txt {
+    width: 100%;
+  }
 
-    /*intro*/
-    #intro {
-      background: radial-gradient(78.5% 71.1% at 52.42% 71.1%, #1C929A 0%, #0D141A 31.42%);
-    }
-    #intro::after {
-      left: 5%;
-      bottom: -10%;
-    }
-    #intro .intro_wrap {
-      flex-direction: column;
-    }
-    #intro .intro_wrap .int_left {
-      width: 58%;
-      margin-bottom: 10%;
-    }
-    #intro .intro_wrap .int_right {
-      width: 70%;
-      justify-content: center;
-    }
+  #Home .home_wrap .links {
+    width: 100%;
+    flex-direction: column;
+  }
 
-      /*intro2*/
+  #Home .home_wrap .links button {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
 
-    #intro2::before{
-      width: 650px;
-      height: 650px;
-      left: -12%;
-      top: -11%;
-    }
-  
-    #intro2::after{
-      width: 900px;
-      height: 145px;
-      right: -4%;
-    }
+  #Home .home_wrap .links button:last-child {
+    margin-bottom: 0 !important;
+  }
 
-    .intro2_cont_img{
-      margin-top: 12%;
-    }
+  /*intro*/
+  #intro {
+    background: radial-gradient(78.5% 71.1% at 52.42% 71.1%, #1C929A 0%, #0D141A 31.42%);
+  }
 
-    .intro2_cont_img img.itr_img{
-      max-width: 80%;
-    }
+  #intro::after {
+    left: 5%;
+    bottom: -10%;
+  }
 
-    /*intro3*/
+  #intro .intro_wrap {
+    flex-direction: column;
+  }
 
+  #intro .intro_wrap .int_left {
+    width: 58%;
+    margin-bottom: 10%;
+  }
 
-    .int3_left_box::after{
-      width: 200px;
-      height: 50px;
-      left: -10%;
-      top: -14%;
-    }
+  #intro .intro_wrap .int_right {
+    width: 70%;
+    justify-content: center;
+  }
 
-    .int3_left_box{
-      padding: 4% 5% 2%;
-    }
+  /*intro2*/
 
-    .int3_left_box br{
-      display: none;
-    }
+  #intro2::before {
+    width: 650px;
+    height: 650px;
+    left: -12%;
+    top: -11%;
+  }
 
-    .intro3_right{
-      text-align: right;
-    }
+  #intro2::after {
+    width: 900px;
+    height: 145px;
+    right: -4%;
+  }
 
-    /*coin*/
-    #coin .coin_area .chart_area {
-      justify-content: space-around;
-      width: 100%;
-    }
-    #coin .coin_area .chart_area::before {
-      width: 100%;
-      border-radius: 450px 0px 0px 450px;
-  } 
+  .intro2_cont_img {
+    margin-top: 12%;
+  }
+
+  .intro2_cont_img img.itr_img {
+    max-width: 80%;
+  }
+
+  /*intro3*/
 
 
-  .chart_graph::after{
+  .int3_left_box h5 {
+    left: 13%;
+  }
+
+  .int3_left_box {
+    padding: 4% 5% 2%;
+  }
+
+  .int3_left_box br {
+    display: none;
+  }
+
+  .intro3_right {
+    text-align: right;
+  }
+
+  /*coin*/
+  #coin .coin_area .chart_area {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #coin .coin_area .chart_area::before {
+    width: 100%;
+    border-radius: 450px 0px 0px 450px;
+  }
+
+
+  .chart_graph::after {
     width: 350px;
     height: 350px;
     left: 0;
     top: 14%;
   }
-  
+
 
   #coin .coin_area .chart_data {
     color: #fff;
     width: 45%;
-    margin: 0 auto ;
-}
-
-#roadmap .roadmap_wrap{
-  width: 100%;
-}
-}
-
-
-
-  /*아이패드 (768px)*/
-  @media screen and (max-width:991px) {
-
-    h3{
-      font-size: 2.2em;
-    }
-
-    /*home*/
-
-    .hd_all .pc_menu {
-      width: 65%;
-    }
-
-    #Home .home_wrap .links{
-      margin-top: 5%;
-    }
-
-
-
-
-      /*intro2*/
-      #intro .intro_wrap .int_left {
-        width: 78%;
-      }
-
-
-      #intro2{
-        padding: 100px 0 120px;
-      }
-
-      .intro2_wrap{
-        padding: 6% 2%;
-      }
-
-      #intro2::before{
-        width: 450px;
-        height: 450px;
-      }
-    
-      #intro2::after{
-        width: 750px;
-        height: 125px;
-        right: -6%;
-        bottom: 4%;
-        background-size: contain;
-      }
-
-      .intro2_contents{
-        display: block;
-      }
-
-      .int2_cont_box{
-        width: 80%;
-        margin: 0 auto 7%;
-        padding: 7%;
-        line-height: 1.8rem;
-      }
-
-
-
-      .intro2_cont_img img.itr_img{
-        max-width: 90%;
-      }
-
-      /*intro3*/
-
-      .intro3_contents{
-        display: block;
-      }
-
-      .intro3_contents .intro3_left{
-        width: 80%;
-        margin: 15% auto 10%;
-      }
-
-      .intro3_right{
-        width: 100%;
-      }
-
-
-      /*coin*/
-
-      #coin .coin_area .chart_area{
-        flex-direction: column;
-
-      }
-
-      #coin .coin_area .chart_area::before{
-        border-radius: 400px 400px 0px 0px;
-        background: linear-gradient(180deg, rgba(35,221,234,1) 0%, rgba(35,221,234,0) 100%)border-box;
-      }
-
-      .chart_graph::after{
-        width: 500px;
-        height: 500px;
-        left: -30%;
-        top: 10%;
-      }
-
-
-      #coin .coin_area .chart_data{
-        width: 60%;
-        margin-top: 20%;
-      }
-
-      #coin .coin_area .chart_txt {
-        flex-direction: column;
-    }
-    #coin .coin_area .coin_txt .chart_txt {
-      margin-bottom: 7%;
+    margin: 0 auto;
   }
 
-    #coin .coin_area .coin_txt .chart_txt .v-line {
-      border-left: 3px solid #23DDEA;
-      height: 45px;
-      transform: rotate(90deg);
-      margin: 0 auto;
+  #roadmap .roadmap_wrap {
+    width: 100%;
+  }
+}
+
+
+
+/*아이패드 (768px)*/
+@media screen and (max-width:991px) {
+
+  h3 {
+    font-size: 2.2em;
+  }
+
+  /*home*/
+
+  .hd_all .pc_menu {
+    width: 65%;
+  }
+
+  #Home .home_wrap .links {
+    margin-top: 5%;
+  }
+
+
+
+
+  /*intro2*/
+  #intro .intro_wrap .int_left {
+    width: 78%;
+  }
+
+
+  #intro2 {
+    padding: 100px 0 120px;
+  }
+
+  .intro2_wrap {
+    padding: 6% 2%;
+  }
+
+  #intro2::before {
+    width: 450px;
+    height: 450px;
+  }
+
+  #intro2::after {
+    width: 750px;
+    height: 125px;
+    right: -6%;
+    bottom: 4%;
+    background-size: contain;
+  }
+
+  .intro2_contents {
+    display: block;
+  }
+
+  .int2_cont_box {
+    width: 80%;
+    margin: 0 auto 7%;
+    padding: 7%;
+    line-height: 1.8rem;
+  }
+
+
+
+  .intro2_cont_img img.itr_img {
+    max-width: 90%;
+  }
+
+  /*intro3*/
+
+  .int3_left_box::after {
+    width: 350px;
+    height: 57px;
+    left: -14%;
+    top: -25%;
+  }
+
+
+  .int3_left_box h5 {
+    top: -8%;
+    left: 10%;
+  }
+
+  .intro3_contents {
+    display: block;
+  }
+
+  .intro3_contents .intro3_left {
+    width: 80%;
+    margin: 15% auto 10%;
+  }
+
+  .intro3_right {
+    width: 100%;
+  }
+
+
+  /*coin*/
+
+  .int3_left_box h5 {
+    top: -8%;
+    left: 14%;
+}
+
+  #coin .coin_area .chart_area {
+    flex-direction: column;
+    border-radius: 400px 400px 0px 0px;
+    box-shadow: rgba(35, 221, 234, .6) 0px -5px 15px 0px, rgba(35, 221, 234, .6) 0px 10px 10px -25px;
+  }
+
+  #coin .coin_area .chart_graph img {
+    max-width: 100%;
+    margin-top: 10%;
+  }
+
+  #coin .coin_area .chart_area::before {
+    border-radius: 400px 400px 0px 0px;
+    background: linear-gradient(180deg, rgba(35, 221, 234, 1) 0%, rgba(35, 221, 234, 0) 100%)border-box;
+  }
+
+  .chart_graph::after {
+    width: 500px;
+    height: 500px;
+    left: -30%;
+    top: 10%;
+  }
+
+  #coin .coin_area .chart_graph {
+    width: 80%;
+  }
+
+
+  #coin .coin_area .chart_data {
+    width: 60%;
+    margin-top: 5%;
+
+  }
+
+  #coin .coin_area .coin_txt .chart_txt {
+    margin-bottom: 7%;
+  }
+
+  #coin .coin_area .coin_txt .chart_txt p br.hiden {
+    display: block;
+  }
+
+  #coin .coin_area .coin_txt .chart_txt .v-line {
+    border-left: 3px solid #23DDEA;
+    height: 65px;
+    margin: 0 auto;
   }
 
 
   /*roadmap*/
 
-    #roadmap .roadmap_wrap .roadmap_box {
-      display: block;
-    }
-    #roadmap .roadmap_wrap .roadmap_box .rdm_box {
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 8%;
-    }
-    #roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card h4 {
-      margin-bottom: 3%;
-    }
+  #roadmap .roadmap_wrap .roadmap_box {
+    display: block;
+  }
 
-    .rdm_card p br{
-      display: none;
-    }
+  #roadmap .roadmap_wrap .roadmap_box .rdm_box {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+  }
+
+  #roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card h4 {
+    margin-bottom: 3%;
+  }
+
+  .rdm_card p br {
+    display: none;
+  }
 
 
   /*contact*/
 
-  #contact .ct-wrap form{
+  #contact .ct-wrap form {
     width: 100%;
   }
 }
@@ -317,7 +357,7 @@
     display: block;
   }
 
-  .hd_all h1{
+  .hd_all h1 {
     float: right;
     width: 15%;
     line-height: 100px;
@@ -325,7 +365,7 @@
   }
 
 
-  header hgroup h1 img{
+  header hgroup h1 img {
     max-width: 100%;
 
   }
@@ -333,21 +373,22 @@
   .hd_all .pc_menu {
     display: none;
   }
+
   .hd_all .menu-btn {
     display: block;
   }
 
 
-  #Home .home_wrap .links{
+  #Home .home_wrap .links {
     margin-top: 10%;
   }
 
-  #Home .home_wrap .links button{
-    width: 53%; 
+  #Home .home_wrap .links button {
+    width: 53%;
   }
 
 
-  #Home .home_wrap .home_txt > p{
+  #Home .home_wrap .home_txt>p {
     margin-top: 7%;
   }
 
@@ -358,32 +399,35 @@
   #intro::after {
     bottom: -20%;
   }
+
   #intro .intro_wrap .int_left {
     width: 100%;
   }
+
   #intro .intro_wrap .int_left .int_txt {
     padding: 5%;
   }
+
   #intro .intro_wrap .int_right {
     width: 90%;
   }
 
   /*intro2*/
 
-  .intro2_contents{
+  .intro2_contents {
     display: block;
     margin-top: 15%;
     margin-bottom: 20%;
   }
 
 
-  .int2_cont_box{
+  .int2_cont_box {
     width: 90%;
     margin: 0 auto 5%;
     padding: 8% 5%;
   }
 
-  #intro2::before{
+  #intro2::before {
     width: 600px;
     height: 600px;
     left: -16%;
@@ -391,92 +435,92 @@
   }
 
 
-  #intro2::after{
+  #intro2::after {
     width: 900px;
     height: 140px;
     right: -30%;
     bottom: 3%;
   }
 
-  .intro2_contents p br{
+  .intro2_contents p br {
     display: none;
   }
 
-  .itr_img_m{
+  .itr_img_m {
     display: block;
   }
-  
-  .itr_img{
+
+  .itr_img {
     display: none;
   }
 
-  .int2_br{
+  .int2_br {
     display: block;
   }
 
 
   /*intro3*/
 
-  .intro3_contents .intro3_left{
+  .intro3_contents .intro3_left {
     width: 100%;
   }
 
 
-  .int3_left_box{
+  .int3_left_box {
     padding: 5% 5% 2%;
   }
 
 
   /*coin*/
 
-  
-  .chart_graph::after{
+
+  .chart_graph::after {
     width: 400px;
     height: 400px;
     left: -37%;
     top: 8%;
   }
 
-  #coin .coin_area .chart_data{
+  #coin .coin_area .chart_data {
     width: 80%;
     margin-top: 5%;
   }
 
-/*roadmap*/
+  /*roadmap*/
 
-  #coin .coin_area .chart_area::before{
+  #coin .coin_area .chart_area::before {
     width: 100%;
   }
 
-  #coin .coin_area .chart_graph{
+  #coin .coin_area .chart_graph {
     padding: 0;
   }
 
-  #coin .coin_area .chart_graph img{
+  #coin .coin_area .chart_graph img {
     width: 100%;
   }
 
 
   /*contact*/
-  #contact{
+  #contact {
     padding: 50px 0;
   }
 
-  #contact .ct-wrap form{
+  #contact .ct-wrap form {
     backdrop-filter: blur(0px);
   }
 
-  #contact .ct-wrap form .send{
+  #contact .ct-wrap form .send {
     width: 30%;
   }
 
 
   /*footer*/
-  footer .f_wrap .f_logo img{
+  footer .f_wrap .f_logo img {
     max-width: 100px;
   }
 
-  footer .f_wrap .f_contents .ct_3rd .pp button{
+  footer .f_wrap .f_contents .ct_3rd .pp button {
     width: 45%;
   }
 
@@ -492,21 +536,25 @@
   .button_gnb {
     display: none;
   }
+
   .bottom_gnb {
     display: flex;
   }
+
   #Home .home_wrap .home_txt h2 {
     font-size: 5rem;
   }
+
   #Home .home_wrap .home_txt br {
     display: none;
   }
+
   #Home .home_wrap .links {
     display: none;
   }
 
 
-  .hd_all h1{
+  .hd_all h1 {
     float: right;
     width: 15%;
     line-height: 100px;
@@ -519,24 +567,25 @@
   #intro .intro_wrap .int_left {
     width: 90%;
   }
+
   #intro .intro_wrap .int_left .int_txt p br {
     display: none;
   }
 
   /*intro2*/
 
-  .intro2_wrap{
+  .intro2_wrap {
     width: 94%;
   }
 
-  .int2_cont_box{
+  .int2_cont_box {
     width: 90%;
     margin: 0 auto 12%;
     padding: 8% 5%;
   }
 
 
-  #intro2::before{
+  #intro2::before {
     width: 600px;
     height: 600px;
     left: -50%;
@@ -544,89 +593,91 @@
   }
 
 
-  #intro2::after{
+  #intro2::after {
     width: 800px;
     height: 140px;
     right: -100%;
     bottom: 2.5%;
   }
-  
+
 
   /*intro3*/
 
-  .int3_left_box{
-    height: 120px;
+  .int3_left_box {
+    height: 130px;
   }
 
-  .int3_left_box::after{
-    top: -14%;
-  }
-
+  .int3_left_box::after {
+    top: -22%;
+}
+.int3_left_box p{
+  margin-top: 4%;
+}
 
   /*contact*/
-  textarea{
+  textarea {
     height: 250px;
   }
 
 
   /*coin*/
-  #coin .coin_area .chart_graph{
+  .chart_txt {
+    flex-wrap: wrap;
+}
+
+  #coin .coin_area .chart_graph {
     height: 396px;
   }
 
-
-  .chart_graph::after{
-  width: 330px;
-  height: 330px;
-  left: -47%;
-  top: 5%;
+  #coin .coin_area .coin_txt .chart_txt p{
+    width: 50%;
   }
 
-  #coin .coin_area .chart_data{
-  width: 100%;
-  margin-top: 5%;
-  font-size: 0.94em;
-  }
+  .int3_left_box h5 {
+    top: -8%;
+    left: 25%;
+}
+
 
   /*footer*/
 
 
-  
-  footer .f_wrap .f_contents{
-  display: flex;
-  align-items:center;
-  flex-direction: column;
-  justify-content: center;
+
+  footer .f_wrap .f_contents {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  footer .f_wrap .f_contents .ct_1st{
+  footer .f_wrap .f_contents .ct_1st {
     text-align: center;
     width: 100%;
   }
 
-  footer .f_wrap .f_contents .ct_2nd{
+  footer .f_wrap .f_contents .ct_2nd {
     text-align: center;
     width: 100%;
   }
 
-  footer .f_wrap .f_contents .ct_2nd h4{
+  footer .f_wrap .f_contents .ct_2nd h4 {
     margin-bottom: 5%;
   }
 
-  footer .f_wrap .f_contents .ct_3rd{
+  footer .f_wrap .f_contents .ct_3rd {
     text-align: center;
     width: 100%;
   }
 
-  footer .f_wrap .f_contents .ct_3rd h4{
+  footer .f_wrap .f_contents .ct_3rd h4 {
     margin-bottom: 5%;
   }
 
-  footer .f_wrap .f_contents .ct_3rd .pp button{
+  footer .f_wrap .f_contents .ct_3rd .pp button {
     margin-right: 5%;
   }
 
-  footer .f_wrap .f_notice{
+  footer .f_wrap .f_notice {
     padding-top: 5%;
   }
 
@@ -636,63 +687,65 @@
 
 /*모바일3 갤럭시*/
 
-  @media screen and (max-width:425px) {
-    #intro2::before{
-      width: 550px;
-      height: 550px;
-    }
-  
-  
-    #intro2::after{
-      right: -110%;
-    }
-
-    .int2_cont_box{
-      padding: 8% 4% 4%;
-    }
+@media screen and (max-width:425px) {
+  #intro2::before {
+    width: 550px;
+    height: 550px;
+  }
 
 
-    .int3_left_box{
-      height: 140px;
-    }
+  #intro2::after {
+    right: -110%;
+  }
 
-    /*coin*/
-
-    .chart_graph::after{
-      left: -45%;
-      top: 3%;
-      }
-    
-      #coin .coin_area .chart_data{
-      width: 100%;
-      margin-top: 5%;
-      font-size: 0.8em;
-      }
-    
+  .int2_cont_box {
+    padding: 8% 4% 4%;
+  }
 
 
-      /*contact*/
-      #contact .ct-wrap form .send{
-        width: 40%;
-      }
+  .int3_left_box {
+    height: 140px;
+  }
+
+  /*coin*/
+
+  .chart_graph::after {
+    left: -45%;
+    top: 3%;
+  }
+
+  #coin .coin_area .chart_data {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 0.8em;
+  }
+
+
+
+  /*contact*/
+  #contact .ct-wrap form .send {
+    width: 40%;
+  }
 
 }
 
 
 
 /*모바일4 아이폰*/
-    @media screen and (max-width:375px) {
-      /*home*/
-      .wrapper {
-        width: 85%;
-    }
-    .wrapper ul li::before {
-      bottom: -25%;
+@media screen and (max-width:375px) {
+
+  /*home*/
+  .wrapper {
+    width: 85%;
   }
 
-  
-  .chart_graph::after{
+  .wrapper ul li::before {
+    bottom: -25%;
+  }
+
+
+  .chart_graph::after {
     left: -56%;
     top: 3%;
-    }
+  }
 }

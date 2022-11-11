@@ -301,7 +301,7 @@ header hgroup h1 img {
 
 /*  bottom_gnb  */
 .bottom_gnb{
-  background-color:rgba(0,0,0,.7);
+  background: rgba(255, 255, 255, 0.6);
   position:fixed;
   width: 100%;
   height: 100px;
@@ -320,7 +320,7 @@ header hgroup h1 img {
 }
 
 .bottom_gnb a i{
-  color: #D4E0EC;
+  color: #585858;
   font-size: 3rem;
 }
 
@@ -404,7 +404,7 @@ header hgroup h1 img {
 }
 #Home .home_wrap .links button a {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-decoration: none;
   display: block;
 }
@@ -705,6 +705,16 @@ header hgroup h1 img {
   background-size: contain;
 }
 
+
+.int3_left_box h5{
+  position: absolute;
+  top: -15%;
+  left: 3%;
+  z-index: 5;
+  font-weight: 600;
+}
+
+
 .intro3_right{
   width: 50%;
 }
@@ -735,6 +745,14 @@ header hgroup h1 img {
   padding: 3% 10%;
   color: #fff;
 }
+
+#coin .coin_area .coin_txt .chart_txt p{
+  width: 25%;
+}
+
+#coin .coin_area .coin_txt .chart_txt p br.hiden{
+  display:none;
+}
 #coin .coin_area .coin_txt .chart_txt .v-line {
   border-left : 3px solid #23DDEA;
   height : 20px;
@@ -748,7 +766,11 @@ header hgroup h1 img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
+    border-radius: 350px 0px 0px 350px;
+    box-shadow: -10px 0px 20px -10px rgba(0, 248, 255, 0.75);
 }
+
 #coin .coin_area .chart_area::before {
   content: "";
   position: absolute;
@@ -759,30 +781,24 @@ header hgroup h1 img {
   right: 0;
   bottom: 0;
   border-radius: 350px 0px 0px 350px;
-  border: 2px solid transparent;
+  border: 5px solid transparent;
   background: linear-gradient(90deg, rgba(35,221,234,1) 0%, rgba(35,221,234,0) 100%)border-box;
   -webkit-mask: linear-gradient(#23DDEA 0 0) padding-box, linear-gradient(#23DDEA 0 0);
   -webkit-mask-composite: destination-out;
-  z-index: -1;
 }
 
 #coin .coin_area .chart_graph {
   width: 50%;
-  height: 500px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.chart_graph::after{
-  content: "";
-  background: url(../img/coin_graph.png) no-repeat center;
-  width: 450px;
-  height: 450px;
-  position: absolute;
-  left: -9%;
-  top: 5%;
-  z-index: 100;
-  background-size: cover;
+#coin .coin_area .chart_graph img{
+  max-width: 80%;
 }
+
 
 #coin .coin_area .chart_data {
   color: #fff;
