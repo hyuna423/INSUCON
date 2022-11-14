@@ -170,7 +170,7 @@
 @media screen and (max-width:991px) {
 
   h3 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 
   /*home*/
@@ -261,10 +261,14 @@
 
   /*coin*/
 
+  #coin .coin_area .coin_txt .chart_txt p {
+    font-size: 1.2rem;
+}
+
   .int3_left_box h5 {
     top: -8%;
     left: 14%;
-}
+  }
 
   #coin .coin_area .chart_area {
     flex-direction: column;
@@ -609,10 +613,11 @@
 
   .int3_left_box::after {
     top: -22%;
-}
-.int3_left_box p{
-  margin-top: 4%;
-}
+  }
+
+  .int3_left_box p {
+    margin-top: 4%;
+  }
 
   /*contact*/
   textarea {
@@ -623,20 +628,38 @@
   /*coin*/
   .chart_txt {
     flex-wrap: wrap;
+  }
+
+  #coin .coin_area .coin_txt .chart_txt p::before {
+    content: "";
+    position: absolute;
+    width:30%;
+    height: 3px;
+    background-color: #23DDEA;
+    left: 50%;
+    top:-60%;
+    transform:translateX(-50%);
+    margin-top: 30px;
+}
+
+#coin .coin_area .coin_txt .chart_txt p:last-child::before{
+  display: block;
 }
 
   #coin .coin_area .chart_graph {
     height: 396px;
   }
 
-  #coin .coin_area .coin_txt .chart_txt p{
+  #coin .coin_area .coin_txt .chart_txt p {
     width: 50%;
+    font-size: 1.2rem;
   }
 
   .int3_left_box h5 {
     top: -8%;
     left: 25%;
-}
+  }
+
 
 
   /*footer*/

@@ -48,7 +48,7 @@ header {
   line-height: 100px;
 }
 header hgroup h1 img {
-  max-width: 45%;
+  max-width: 30%;
 
 }
 
@@ -703,6 +703,7 @@ header hgroup h1 img {
   top: -30%;
   background: url(../img/intro3_shape.png) no-repeat;
   background-size: contain;
+  opacity: .6;
 }
 
 
@@ -711,7 +712,8 @@ header hgroup h1 img {
   top: -15%;
   left: 3%;
   z-index: 5;
-  font-weight: 600;
+  font-weight: 700;
+  color: #FFB300;
 }
 
 
@@ -742,12 +744,27 @@ header hgroup h1 img {
 #coin .coin_area .coin_txt .chart_txt {
   display: flex;
   justify-content: space-evenly;
-  padding: 3% 10%;
+  padding: 3% 0%;
   color: #fff;
 }
 
 #coin .coin_area .coin_txt .chart_txt p{
   width: 25%;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+#coin .coin_area .coin_txt .chart_txt p::before{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color:#23DDEA;
+  right: 0;
+}
+
+#coin .coin_area .coin_txt .chart_txt p:last-child::before{
+  display: none;
 }
 
 #coin .coin_area .coin_txt .chart_txt p br.hiden{
@@ -796,7 +813,8 @@ header hgroup h1 img {
 }
 
 #coin .coin_area .chart_graph img{
-  max-width: 80%;
+    max-width: 90%;
+    margin: 3% 0;
 }
 
 
